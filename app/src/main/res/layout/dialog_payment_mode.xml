@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:typeface="http://schemas.android.com/apk/res/com.taxiex"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/activity_margin_twenty"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_margin="@dimen/activity_margin_twenty"
+        
+        android:orientation="vertical" >
+
+        <com.tms.driver.customviews.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/activity_margin_twenty"
+            android:text="@string/payment_mode_title"
+            android:textColor="@color/title_color"
+       />
+
+        <com.tms.driver.customviews.CustomButton
+            android:id="@+id/dailog_payment_cash_button"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/activity_margin"
+            android:background="@drawable/selector_cash_payment_button"
+           />
+
+        <com.tms.driver.customviews.CustomButton
+            android:id="@+id/dailog_payment_credit_button"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/selector_credit_payment_button"
+             />
+    </LinearLayout>
+
+</LinearLayout>

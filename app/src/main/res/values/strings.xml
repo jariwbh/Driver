@@ -1,0 +1,180 @@
+<resources>
+
+   <string name="currency">$</string>
+    <string name="login_button_width">525</string>
+    <string name="login_button_height">57</string>
+    <string name="forgot_button_width">1225</string>
+    <string name="forgot_button_height">57</string>
+    <string name="app_name">TMS Driver</string>
+    <string name="app_name_2">TMS Driver</string>
+    <string name="font_name">HelveticaMed_0.ttf</string>
+    <string name="helvitca_bold">HelveticaBd___-_0.ttf</string>
+    
+   <!--<string name="map_key_debuggable">AIzaSyCa0mX58pyouEf0aDpGierNz5AMb23_wZ0</string>-->
+    <!-- <string name="map_key_debuggable">AIzaSyA-icL2RtQAWyJtM2HwQXx59PD8KmRaJ0s</string> -->
+
+
+
+  <!--  <string name="map_key_debuggable">AIzaSyCsJxoD_yDFtMIJ4LtEGGY4x5DT1wFX7_I</string>-->
+
+
+      <!--<string name="map_key_debuggable">AIzaSyCcwX1yRZU_VFhDvA8jde76xGKpWEQi5Ps</string>-->
+     <!-- <string name="map_key_debuggable">AIzaSyDPqzqkyEnnyuLip0DIlrCR8WvwjokwVhw</string>Commented on 26/09/2017-->
+      <string name="map_key_debuggable">AIzaSyAX8UHlQZi-Dii6h0BY2q9izCGFyf75WZk</string><!--API console username: abouavong@inbold.ca-->
+    <!-- Login Screen Strings -->
+
+    <string name="login_screen_title">LOGIN</string>
+    <string name="login_screen_email_hint">Email</string>
+    <string name="login_screen_pswd_hint">Password</string>
+    <string name="login_screen_forgot_pswd">Forgot Password?</string>
+    <string name="login_screen_login_button">LOGIN</string>
+    <string name="login_screen_description">Simply enter the details and get started!</string>
+    <string name="login_web_link">Powered by <u>Taxi Mobile Solutions</u></string>
+
+    <!-- Forgot Password Screen Strings -->
+
+    <string name="forgot_pswd_title">FORGOT PASSWORD ?</string>
+    <string name="forgot_pswd_email_hint">Email</string>
+    <string name="forgot_pswd_send_me_button">SEND ME PASSWORD</string>
+    <string name="forgot_pswd_description">Please enter your registered email address above. We will send you an email with your new password.</string>
+
+    <!-- My profile Screen Strings -->
+    <string name="my_profile_title">MY PROFILE</string>
+    <string name="my_profile_name_textview">Nick Chapman</string>
+    <string name="my_profile_current_rating">CURRENT RATING</string>
+    <string name="my_profile_recent_trips">MY RECENT TRIPS</string>
+    <string name="my_profile_reservations">RESERVATIONS</string>
+
+    <!-- Recent trip Screen Strings -->
+    <string name="recent_trip_inflated_datetime">Date and Time:</string>
+    <string name="recent_trip_inflated_total_fare">Total fare :</string>
+    <string name="recent_trip_inflated_status">Status:</string>
+    <string name="recent_trip_inflated_reciept_number">Receipt Number:</string>
+    <string name="recent_trip_title">RECENT TRIPS</string>
+    <string name="recent_trip_inflated_tip">Tip:</string>
+
+    <!-- Vehicles Registered Screen Strings -->
+
+    <string name="vehicles_registered_title">VEHICLES REGISTERED</string>
+
+    <!-- Way Bill Screen Strings -->
+
+    <string name="way_bill_title">Waybill</string>
+    <string name="way_bill_driver_name">Driver Name:</string>
+    <string name="way_bill_driver_license">Driver License:</string>
+    <string name="way_bill_license_plate">License Plate:</string>
+    <string name="way_bill_time">Time:</string>
+    <string name="way_bill_rate">Rate:</string>
+    <string name="way_bill_passengers">Passengers:</string>
+    <string name="way_bill_trip">Trip:</string>
+    <string name="way_bill_via">Via:</string>
+    <string name="way_bill_passenger_name">Passenger\'s Name:</string>
+    <string name="way_bill_from">From:</string>
+    <string name="way_bill_to">To:</string>
+
+    <!-- Aleet Dialog Strings -->
+    <string name="alert_terms_conditions">Please confirm that you agree to the new contracts.</string>
+    <string name="alert_logout">Are you sure you want to logout of the app?</string>
+    <string name="alert_offline">Do you want to go offline?</string>
+    <string name="alert_email_left_blank">Please enter email address!</string>
+    <string name="alert_email_not_valid">Please enter valid email address!</string>
+    <string name="alert_password_left_blank">Please enter password!</string>
+    <string name="alert_no_button">NO</string>
+    <string name="alert_agree_button">Yes, I agree</string>
+    <string name="alert_ok_button">OK</string>
+    <string name="alert_yes_button">YES</string>
+    <string name="alert_start_trip">Are you sure you want to start trip?</string>
+    <string name="alert_end_trip">Are you sure you want to end trip?</string>
+    <string name="alert_cancel_trip">Are you sure you want to cancel trip?</string>
+    <string name="alert_cancel_button">CANCEL</string>
+    <string name="alert_save_button">SAVE</string>
+    <string name="alert_dialog_fetching_location">Fetching current location...</string>
+    <string name="submit">SUBMIT</string>
+
+    <!-- Duty Status Strings -->
+
+    <string name="duty_status_title">DUTY STATUS</string>
+    <string name="duty_status_driver_name">Welcome\nDrive Name</string>
+    <string name="duty_status_go_online_text">GO\nONLINE</string>
+    <string name="duty_status_go_online_text1">ONLINE</string>
+    <string name="duty_status_change_vehicle_text">CHANGE VEHICLE</string>
+    <string name="duty_status_vehicle_name_text">Lincoln Town Car\n H356611</string>
+    <string name="duty_status_online_status_text">You are offline at the moment.</string>
+
+    <!-- My profile rating Strings -->
+    <string name="my_profile_rating_current_rating">CURRENT RATING</string>
+    <string name="my_profile_rating_title">MY PROFILE</string>
+    <string name="my_recent_trip_title">MY RECENT TRIPS</string>
+    <string name="vehicles_registeres_title">VEHICLES REGISTERED</string>
+
+    <!-- Fare Summary Strings -->
+
+    <string name="fare_summary_date">Date:</string>
+    <string name="fare_summary_total_fare">Total Fare:</string>
+    <string name="fare_sumary_amount_paid_by_cash_description">The Passenger has to pay this amount\nby cash.</string>
+    <string name="fare_sumary_amount_paid_by_creditcard_description">The Passenger has paid this amount\nelectronically.</string>
+    <string name="fare_summary_rate_your_passenger">RATE YOUR PASSENGER</string>
+    <string name="fare_summary_worst">Worst</string>
+    <string name="fare_summary_best">Best</string>
+    <string name="fare_summary_comment_description">You can share your experience with us by leaving your comment here. This is optional.</string>
+    
+    <string name="fare_summary_submit_button">SUBMIT</string>
+    <string name="fare_summary_discount">Discount:</string>
+    <string name="fare_summary_payment">Payment:</string>
+    
+    
+
+    <!-- Terms and Conditions Strings -->
+
+    <string name="terms_and_conditions_title">TERMS &amp; CONDITIONS</string>
+    <string name="terms_and_conditions_description1">CarConnect has updated its partner and driver contracts. PLEASE AGREE ALL THE CONTRACTS BELOW TO GO...</string>
+    <string name="terms_and_condition_privacy_policy">Privacy Policy</string>
+    <string name="terms_and_conditions_rulesandregulations">Rules and Regulations</string>
+    <string name="terms_and_conditions_independent_contracts">Independent Contractor Service Agreement</string>
+    <string name="terms_and_conditions_description2">By Clicking below, you acknowledge that you agree to all the contracts above.</string>
+    <string name="terms_and_condition_accept">ACCEPT</string>
+
+    <!-- Onlne Screen String -->
+    <string name="online_accept_trip"> ACCEPT</string>
+    <string name="online_arriving_now">ONSITE</string>
+    <string name="online_start_trip">START TRIP</string>
+    <string name="online_end_trip"> END TRIP</string>
+    <string name="online_time_message">Touch in 15 seconds to accept the request</string>
+
+    <!-- Payment Mode strings -->
+    <string name="payment_mode_title">PAYMENT MODE</string>
+    <string name="payment_mode_cash">CASH</string>
+    <string name="payment_mode_credit">CREDIT</string>
+
+    
+    
+    <!-- Reservation List -->
+    
+    <string name="reservation_list_title">RESERVATION STATUS</string>
+    
+    <!-- Reservation History -->
+    
+    <string name="reservation_history">RESERVATION HISTORY</string>
+    <!-- Reservation Details -->
+    
+    <string name="reservation_details">RESERVATION DETAILS</string>
+    <string name="rating_alert">Please provide rating.</string>
+    
+    
+    <!-- Additional charges -->
+
+<string name="additional_charges"> <u>Additional Charges</u></string>
+<string name="toll">Toll</string>    
+<string name="fare">Fare</string>
+<string name="other_taxes">Other Taxes</string>
+<string name="total">Total</string>
+
+<!--  Locations Dialog 
+  --> 
+  <string name="get_location_google_map">GOOGLE MAP</string>
+    <string name="get_location_waze_map">WAZE MAP</string>
+
+ <string name="gpsPermission">Enable GPS Permission</string>
+ <string name="gpsError">Can not find location without enable the gps permission.</string>
+
+</resources>

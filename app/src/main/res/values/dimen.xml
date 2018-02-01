@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="fare_summary_star_height">15dp</dimen>
+    <dimen name="activity_padding">5dp</dimen>
+    <dimen name="activity_margin">10dp</dimen>
+    <dimen name="linespacing_dp">7dp</dimen>
+    <dimen name="activity_margin_twenty">20dp</dimen>
+    <dimen name="title_size">16sp</dimen>
+     <dimen name="activity_margin_tablet_thirty">30dp</dimen>
+    <dimen name="title_size_tab_seven">30sp</dimen>
+    <dimen name="activity_padding_tab_seven">10dp</dimen>
+
+</resources>

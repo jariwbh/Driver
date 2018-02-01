@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imgTouch"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha=".85"
+        android:background="@color/black" />
+
+
+    <RelativeLayout
+        android:id="@+id/relDialog"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/back_ground_pop_ups"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/txtHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/txtLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtHeader"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/btnGetLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relDialog"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/background_oval_dark"
+        android:padding="10dp"
+        android:text="@string/get_location_google_map"
+        android:textColor="@color/title_color" />
+
+    <Button
+        android:id="@+id/btnWazeMap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnGetLocation"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/background_oval_dark"
+        android:padding="10dp"
+        android:text="@string/get_location_waze_map"
+        android:textColor="@color/title_color" />
+
+
+</RelativeLayout>

@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:typeface="http://schemas.android.com/apk/res/com.taxiex"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login_register"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/activity_padding"
+            android:weightSum="3">
+
+            <com.tms.driver.customviews.CustomImageView
+                android:id="@+id/frag_fare_summary_image"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight=".6"
+                android:scaleType="center" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.6"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/activity_padding"
+                android:weightSum="3">
+
+                <com.tms.driver.customviews.CustomTextView
+                    android:id="@+id/frag_fare_summary_rider_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="left|center_vertical"
+                    android:text="asdasd"
+                    android:textColor="@color/text_color" />
+
+                <com.tms.driver.customviews.CustomTextView
+                    android:id="@+id/frag_fare_summary_phn_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/mobile_icon"
+                    android:drawablePadding="@dimen/activity_padding"
+                    android:gravity="left|center_vertical"
+                    android:textColor="@color/text_color" />
+
+                <com.tms.driver.customviews.CustomTextView
+                    android:id="@+id/frag_fare_summary_car_model"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/car_1"
+                    android:drawablePadding="@dimen/activity_padding"
+                    android:gravity="left|center_vertical"
+                    android:textColor="@color/text_color" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".8"
+                android:gravity="right"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/title_color"
+                    android:padding="3dp"
+                    android:scaleType="center"
+                    android:src="@drawable/star_transparent"
+                    />
+
+                <com.tms.driver.customviews.CustomTextView
+                    android:id="@+id/frag_fare_summary_rating_textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/gray"
+                    android:gravity="center"
+                    android:padding="@dimen/activity_padding"
+                    android:text="4.5"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:src="@drawable/receipt_handle" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_margin_twenty"
+                android:layout_marginRight="@dimen/activity_margin_twenty"
+                android:layout_marginTop="@dimen/activity_margin"
+                android:background="@drawable/receipt_paper">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_margin"
+                    android:weightSum="2">
+
+                    <com.tms.driver.customviews.CustomTextView
+                        android:layout_marginLeft="@dimen/activity_margin_twenty"
+                        android:layout_weight=".5"
+                        android:lineSpacingExtra="@dimen/activity_margin"
+                        android:text="@string/fare_summary_date"
+                        android:textColor="@color/text_color"
+                        android:textStyle="bold" />
+
+                    <com.tms.driver.customviews.CustomTextView
+                        android:id="@+id/frag_fare_summary_date"
+                        android:layout_weight="1.5"
+                        android:lineSpacingExtra="@dimen/activity_margin"
+                        android:textColor="@color/text_color"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:weightSum="2">
+
+                    <com.tms.driver.customviews.CustomTextView
+                        android:layout_marginLeft="@dimen/activity_margin_twenty"
+                        android:layout_weight=".5"
+                        android:lineSpacingExtra="@dimen/activity_margin"
+                        android:text="@string/fare_summary_total_fare"
+                        android:textColor="@color/text_color"
+                        android:textStyle="bold" />
+
+                    <com.tms.driver.customviews.CustomTextView
+                        android:id="@+id/frag_fare_summary_total_fare"
+                        android:layout_weight="1.5"
+                        android:lineSpacingExtra="@dimen/activity_margin"
+                        android:textColor="@color/text_color"
+                        android:textStyle="bold" />
+                </TableRow>
+
+
+                <TableRow
+                    android:id="@+id/frag_fare_discount_table"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2">
+
+                    <com.tms.driver.customviews.CustomTextView
+                        android:layout_marginLeft="@dimen/activity_margin_twenty"
+                        android:layout_weight=".5"
+                        android:lineSpacingExtra="@dimen/activity_margin"
+                        android:text="@string/fare_summary_discount"
+                        android:textColor="@color/text_color"
+                        android:textStyle="bold" />
+
+                    <com.tms.driver.customviews.CustomTextView
+                        android:id="@+id/frag_fare_summary_discount"
+                        android:layout_weight="1.5"
+                        android:lineSpacingExtra="@dimen/activity_margin"
+                        android:textColor="@color/text_color"
+                        android:textStyle="bold" />
+                </TableRow>
+
+
+                <TableRow
+                    android:id="@+id/frag_fare_payment_table"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2">
+
+                    <com.tms.driver.customviews.CustomTextView
+                        android:layout_marginLeft="@dimen/activity_margin_twenty"
+                        android:layout_weight=".5"
+                        android:lineSpacingExtra="@dimen/activity_margin"
+                        android:text="@string/fare_summary_payment"
+                        android:textColor="@color/text_color"
+                        android:textStyle="bold" />
+
+                    <com.tms.driver.customviews.CustomTextView
+                        android:id="@+id/frag_fare_summary_payment"
+                        android:layout_weight="1.5"
+                        android:lineSpacingExtra="@dimen/activity_margin"
+                        android:textColor="@color/text_color"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <com.tms.driver.customviews.CustomTextView
+                    android:id="@+id/frag_fare_summary_payment_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+
+                    android:gravity="center"
+
+
+                    android:text="@string/fare_sumary_amount_paid_by_creditcard_description" />
+            </TableLayout>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/activity_margin"
+            android:background="@drawable/rate_box"
+            android:orientation="vertical"
+            android:weightSum="3">
+
+            <com.tms.driver.customviews.CustomTextView
+                style="@android:style/TextAppearance.DeviceDefault.Small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+
+                android:layout_weight="1.8"
+                android:gravity="center"
+                android:padding="@dimen/activity_padding"
+                android:text="@string/fare_summary_rate_your_passenger"
+                android:textColor="@color/title_color"
+                android:textSize="12sp"
+
+                />
+
+
+            <RatingBar
+                android:id="@+id/frag_fare_summary_rating_bar"
+                style="@style/StarRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:clickable="true"
+
+                android:focusableInTouchMode="true"
+                android:numStars="5"
+                android:rating="0" />
+
+            <com.tms.driver.customviews.CustomTextView
+                android:id="@+id/ratingStatus"
+                style="@android:style/TextAppearance.DeviceDefault.Small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:layout_margin="5dp"
+                android:gravity="center"
+
+                android:textColor="@color/title_color"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <com.tms.driver.customviews.CustomEditText
+            android:id="@+id/frag_fare_summary_comments"
+            style="@android:style/TextAppearance.DeviceDefault.Small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_margin"
+            android:background="@drawable/rate_box"
+            android:hint="@string/fare_summary_comment_description"
+            android:lineSpacingExtra="@dimen/linespacing_dp"
+            android:maxLines="4"
+            android:minLines="4"
+            android:padding="@dimen/activity_margin"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+        <com.tms.driver.customviews.CustomButton
+            android:id="@+id/frag_fare_submit"
+            style="@android:style/TextAppearance.DeviceDefault.Widget.PopupMenu.Small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_margin_twenty"
+            android:background="@color/theme_color"
+            android:gravity="center"
+            android:padding="@dimen/activity_padding"
+            android:text="@string/fare_summary_submit_button"
+            android:textColor="@color/text_color" />
+    </LinearLayout>
+
+</ScrollView>

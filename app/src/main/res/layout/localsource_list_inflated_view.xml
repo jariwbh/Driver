@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:typeface="http://schemas.android.com/apk/res/com.taxiex"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <com.tms.driver.customviews.CustomTextView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/title_color"
+        android:gravity="center"
+        android:padding="@dimen/activity_margin"
+        android:textColor="@color/theme_color"
+        android:textStyle="italic" />
+
+    <ListView
+        android:id="@+id/localsource_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:lineSpacingExtra="@dimen/activity_margin"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_margin_twenty" />
+
+</LinearLayout>

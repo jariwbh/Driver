@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:typeface="http://schemas.android.com/apk/res/com.taxiex"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_screen_background"
+    android:orientation="vertical" >
+
+    <com.tms.driver.customviews.CustomTextView
+        style="@android:style/TextAppearance.DeviceDefault.Medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/theme_color"
+        android:gravity="center"
+        android:lineSpacingExtra="@dimen/linespacing_dp"
+        android:padding="@dimen/activity_margin"
+        android:text="@string/terms_and_conditions_title"
+        android:textStyle="bold"
+        android:textColor="@color/title_color"
+   />
+
+    <com.tms.driver.customviews.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:lineSpacingExtra="@dimen/linespacing_dp"
+        android:padding="@dimen/activity_margin"
+        android:text="@string/terms_and_conditions_description1"
+        android:textColor="@color/white"
+         />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_margin_twenty"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <com.tms.driver.customviews.CustomTextView
+            android:id="@+id/frag_terms_conditions_privacy_policy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="@dimen/linespacing_dp"
+            android:padding="@dimen/activity_padding"
+            android:text="@string/terms_and_condition_privacy_policy"
+            android:textColor="#000000"
+          />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+           android:background="#000000" />
+
+        <com.tms.driver.customviews.CustomTextView
+            android:id="@+id/frag_terms_conditions_rules_and_regulations"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="@dimen/linespacing_dp"
+            android:padding="@dimen/activity_padding"
+            android:text="@string/terms_and_conditions_rulesandregulations"
+            android:textColor="#000000"
+           />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000000" />
+
+        <com.tms.driver.customviews.CustomTextView
+            android:id="@+id/frag_terms_conditions_independent_contracts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="@dimen/linespacing_dp"
+            android:padding="@dimen/activity_padding"
+            android:text="@string/terms_and_conditions_independent_contracts"
+            android:textColor="@color/black"
+             />
+    </LinearLayout>
+
+    <com.tms.driver.customviews.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:lineSpacingExtra="@dimen/linespacing_dp"
+        android:padding="@dimen/activity_margin"
+        android:text="@string/terms_and_conditions_description2"
+        android:textColor="@color/white"
+       />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <com.tms.driver.customviews.CustomButton
+            android:id="@+id/terms_conditions_accept"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@drawable/accept_button_bg"
+            android:gravity="center"
+           
+            android:textColor="@color/title_color"
+            android:text="@string/terms_and_condition_accept"
+             />
+    </LinearLayout>
+
+</LinearLayout>

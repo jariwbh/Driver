@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha=".8"
+        android:background="@color/black" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/background_dark"
+        android:paddingBottom="5dp" >
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="2dp"
+            android:background="@color/theme_color"
+            android:gravity="center_horizontal"
+            android:text="@string/additional_charges"
+            android:textColor="@color/title_color"
+            android:textSize="20sp" />
+        
+
+        
+           
+
+        <TextView
+            android:id="@+id/txtTollStatic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/toll"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_below="@+id/txtTitle"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtToll"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+        
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/text_field_bright"
+            android:focusable="true"
+              android:layout_below="@+id/txtTitle"
+            android:focusableInTouchMode="true"
+            android:hint="@string/toll"
+            android:inputType="numberDecimal"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/txtTaxesStatic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtToll"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/other_taxes"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtTaxes"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/edtToll"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/text_field_bright"
+            android:hint="@string/other_taxes"
+            android:inputType="numberDecimal"
+            android:textColor="@color/black"
+            android:imeOptions="actionGo"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/txtTotalStatic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtTaxes"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/total"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtTotalActual"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/edtTaxes"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/text_field_bright"
+            android:hint="@string/total"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtTotalActual"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp" >
+
+            <Button
+                android:id="@+id/btnOk"
+                android:layout_width="120dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/txtTotalActual"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@+id/btnCancel"
+                android:background="@drawable/background_dark"
+                android:paddingLeft="9dp"
+                android:paddingRight="9dp"
+                android:text="@string/submit"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="120dp"
+                android:layout_height="30dp"
+                android:layout_alignBaseline="@+id/btnOk"
+                android:layout_alignBottom="@+id/btnOk"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/background_dark"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:text="@string/alert_cancel_button"
+                android:textColor="@color/black" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

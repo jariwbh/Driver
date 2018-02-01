@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login_register"
+    android:orientation="vertical" >
+
+    <fragment
+        android:id="@+id/activity_duty_status_header_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        class="com.tms.driver.fragments.HeaderFragment" />
+
+    <FrameLayout
+        android:id="@+id/acitivity_duty_status_frag"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp" >
+    </FrameLayout>
+
+</LinearLayout>

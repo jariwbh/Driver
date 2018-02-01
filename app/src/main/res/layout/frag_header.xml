@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:typeface="http://schemas.android.com/apk/res/com.taxiex"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/theme_color"
+    android:orientation="horizontal"
+   >
+
+    <com.tms.driver.customviews.CustomTextView
+        android:id="@+id/frag_header_title"
+        style="@android:style/TextAppearance.DeviceDefault.Large"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:text="@string/app_name_2"
+        android:textStyle="bold"
+        android:textColor="@color/title_color"
+        /> 
+        
+
+
+    <com.tms.driver.customviews.CustomTextView
+        android:id="@+id/frag_header_saveImage"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="left|center_vertical"
+        android:text="Save"
+        android:visibility="gone"
+         />
+
+    <com.tms.driver.customviews.CustomTextView
+        android:id="@+id/frag_header_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:text="Cancel"
+        android:visibility="gone"
+     />
+
+    <ImageView
+        android:id="@+id/frag_header_left_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|center_vertical"
+        android:src="@drawable/ic_launcher"
+        android:layout_margin="10dp"/>
+
+    <ImageView
+        android:id="@+id/frag_header_right_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:src="@drawable/ic_launcher"
+        android:layout_margin="10dp"/>
+
+</FrameLayout>

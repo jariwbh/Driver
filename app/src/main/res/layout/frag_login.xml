@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:typeface="http://schemas.android.com/apk/res/com.taxiex"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_margin="@dimen/activity_margin_twenty"
+        android:background="@drawable/login_screen_background"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@color/white" />
+
+        <com.tms.driver.customviews.CustomTextView
+            android:id="@+id/title"
+            style="@android:style/TextAppearance.DeviceDefault.Medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/theme_color"
+            android:gravity="center"
+            android:padding="@dimen/activity_margin"
+            android:text="@string/login_screen_title"
+            android:textColor="@color/title_color"
+            android:textSize="@dimen/title_size"
+            android:textStyle="bold" />
+
+        <com.tms.driver.customviews.CustomEditText
+            android:id="@+id/login_screen_email_edittext"
+            style="@android:style/TextAppearance.DeviceDefault.Small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_marginLeft="@dimen/activity_margin"
+            android:layout_marginRight="@dimen/activity_margin"
+            android:layout_marginTop="@dimen/activity_margin"
+            android:drawableLeft="@drawable/email_icon_profile"
+            android:drawablePadding="@dimen/activity_padding"
+            android:hint="@string/login_screen_email_hint"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textColor="@color/text_color"
+            android:textColorHint="@color/text_color_hint" />
+
+        <com.tms.driver.customviews.CustomEditText
+            android:id="@+id/login_screen_password_edittext"
+            style="@android:style/TextAppearance.DeviceDefault.Small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login_screen_email_edittext"
+            android:layout_marginLeft="@dimen/activity_margin"
+            android:layout_marginRight="@dimen/activity_margin"
+            android:layout_marginTop="@dimen/activity_margin"
+            android:drawableLeft="@drawable/password_icon_profile"
+            android:drawablePadding="@dimen/activity_padding"
+            android:hint="@string/login_screen_pswd_hint"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/text_color"
+            android:textColorHint="@color/text_color_hint" />
+
+        <com.tms.driver.customviews.CustomTextView
+            android:id="@+id/login_screen_frgt_pswd_text"
+            style="@android:style/TextAppearance.DeviceDefault.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/login_screen_password_edittext"
+            android:layout_gravity="right"
+            android:layout_marginBottom="@dimen/activity_margin"
+            android:layout_marginLeft="@dimen/activity_margin_twenty"
+            android:layout_marginRight="@dimen/activity_margin_twenty"
+            android:layout_marginTop="@dimen/activity_margin"
+            android:text="@string/login_screen_forgot_pswd"
+            android:textColor="@color/text_color"
+            android:textStyle="italic" />
+
+        <com.tms.driver.customviews.CustomButton
+            android:id="@+id/login_screen_login_button"
+            style="@android:style/TextAppearance.DeviceDefault.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/login_button"
+            android:onClick=""
+            android:paddingLeft="@dimen/activity_margin_twenty"
+            android:paddingRight="@dimen/activity_margin_twenty"
+            android:text="@string/login_screen_login_button"
+            android:textColor="@color/button_text_color"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <com.tms.driver.customviews.CustomTextView
+        android:id="@+id/txtInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/frame"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/activity_margin"
+        android:text="@string/login_screen_description"
+        android:textColor="@color/info_text_color"
+        android:textStyle="italic" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <com.tms.driver.customviews.CustomTextView
+            android:id="@+id/frag_login_web_link"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:autoLink="web"
+            android:gravity="center"
+            android:linksClickable="true"
+            android:padding="@dimen/activity_padding"
+            android:text="@string/login_web_link"
+            android:textColor="@color/info_text_color"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</RelativeLayout>

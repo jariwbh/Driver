@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CustomEndlessView">
+        <attr name="threshold" format="string" />
+        <attr name="offset" format="string" />
+    </declare-styleable>
+    <declare-styleable name="CustomTextView">
+        <attr name="customtypeface" format="string" />
+        <attr name="customtextsize" format="string" />
+        <attr name="customwidth" format="string" />
+        <attr name="customheight" format="string" />
+        <attr name="ismandatory" format="boolean"></attr>
+    </declare-styleable>
+    <declare-styleable name="CustomImageView">
+        <attr name="height_stylable" format="integer" />
+        <attr name="width_stylable" format="integer" />
+        <attr name="url" format="string" />
+        <attr name="defaultImage" format="reference" />
+    </declare-styleable>
+
+</resources>

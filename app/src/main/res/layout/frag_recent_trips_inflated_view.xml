@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:typeface="http://schemas.android.com/apk/res/com.taxiex"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:padding="@dimen/activity_padding" >
+
+        <com.tms.driver.customviews.CustomTextView
+            android:layout_weight="1"
+            android:lineSpacingExtra="@dimen/linespacing_dp"
+            android:text="@string/recent_trip_inflated_datetime"
+            android:textColor="@color/text_color"
+            />
+
+        <com.tms.driver.customviews.CustomTextView
+            android:id="@+id/frag_recent_trip_dateandtime"
+            android:layout_weight="1"
+            android:lineSpacingExtra="@dimen/linespacing_dp"
+            android:textColor="@color/text_color"
+            />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:padding="@dimen/activity_padding" >
+
+        <com.tms.driver.customviews.CustomTextView
+            android:layout_weight="1"
+            android:lineSpacingExtra="@dimen/linespacing_dp"
+            android:text="@string/recent_trip_inflated_total_fare"
+            android:textColor="@color/text_color"
+            />
+
+        <com.tms.driver.customviews.CustomTextView
+            android:id="@+id/frag_recent_trip_total_fare"
+            android:layout_weight="1"
+            android:lineSpacingExtra="@dimen/linespacing_dp"
+            android:textColor="@color/text_color"
+          />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:padding="@dimen/activity_padding" >
+
+        <com.tms.driver.customviews.CustomTextView
+            android:layout_weight="1"
+            android:lineSpacingExtra="@dimen/linespacing_dp"
+            android:text="@string/recent_trip_inflated_status"
+            android:textColor="@color/text_color"
+          />
+
+        <com.tms.driver.customviews.CustomTextView
+            android:id="@+id/frag_recent_trip_status"
+            android:layout_weight="1"
+            android:lineSpacingExtra="@dimen/linespacing_dp"
+            android:textColor="@color/text_color"
+           />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:padding="@dimen/activity_padding" >
+
+        <com.tms.driver.customviews.CustomTextView
+            android:layout_weight="1"
+            android:lineSpacingExtra="@dimen/linespacing_dp"
+            android:text="@string/recent_trip_inflated_reciept_number"
+            android:textColor="@color/text_color"
+           />
+
+        <com.tms.driver.customviews.CustomTextView
+            android:id="@+id/frag_recent_trip_recent_trip"
+            android:layout_weight="1"
+            android:lineSpacingExtra="@dimen/linespacing_dp"
+            android:textColor="@color/text_color"
+           />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+
+        android:padding="@dimen/activity_padding" >
+
+        <com.tms.driver.customviews.CustomTextView
+            android:layout_weight="1"
+            android:lineSpacingExtra="@dimen/linespacing_dp"
+            android:text="@string/recent_trip_inflated_tip"
+            android:textColor="@color/text_color"
+  
+             />
+
+        <com.tms.driver.customviews.CustomTextView
+            android:id="@+id/frag_recent_trip_tip"
+            android:layout_weight="1"
+            android:lineSpacingExtra="@dimen/linespacing_dp"
+            android:textColor="@color/text_color"
+           
+             />
+    </TableRow>
+
+</TableLayout>

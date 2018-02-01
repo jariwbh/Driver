@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "499387239449",
+    "firebase_url": "https://driverapp-181106.firebaseio.com",
+    "project_id": "driverapp-181106",
+    "storage_bucket": "driverapp-181106.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:499387239449:android:29325eb8048cacf0",
+        "android_client_info": {
+          "package_name": "com.tms.driver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "499387239449-6uq0e6dquvo0ln3gu82v2pj7r73v3em5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAv98cudwDmwxsjYkKU_2sUWITGRxClF1o"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

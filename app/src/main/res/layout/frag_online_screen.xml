@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tms.driver.customviews.CustomLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:typeface="http://schemas.android.com/apk/res/com.taxiex"
+    android:id="@+id/frag_online_linear"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:weightSum="2" >
+
+    <fragment
+        android:id="@+id/activity_online_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        class="com.tms.driver.fragments.HeaderFragment"     />
+
+
+   
+
+    <FrameLayout
+        android:id="@+id/frag_online_way_bill"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.4"
+        >
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        
+      <!--  <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+      -->
+
+        <TextView
+            android:id="@+id/txtPayvia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/theme_color_another"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Payment mode: Cash"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+
+
+        <RelativeLayout
+            android:id="@+id/tap_accept"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+
+            >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/message_touch_in_15sec" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/countdownlinear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="82dp"
+            android:background="@drawable/timer_yellow_bg"
+            android:orientation="horizontal"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/timer_black_bg"
+                android:orientation="horizontal"
+                >
+
+                <com.tms.driver.customviews.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/timer_countdown"
+                    android:gravity="center" />
+
+                <com.tms.driver.customviews.CustomTextView
+                    android:id="@+id/frag_online_countdown_time"
+                    style="@android:style/TextAppearance.DeviceDefault.Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/timer_yellow_box"
+                    android:gravity="center"
+                    android:textColor="@color/white" />
+
+                <com.tms.driver.customviews.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    android:text="SEC"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </RelativeLayout>
+        <!--</RelativeLayout>-->
+
+        <ImageView
+            android:id="@+id/frag_online_waybill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="@dimen/activity_margin"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:src="@drawable/waybill_info_icon"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/frag_online_route_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/theme_color"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/icon_pickup" />
+
+        <com.tms.driver.customviews.CustomTextView
+            android:id="@+id/frag_online_short_route"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:drawableRight="@drawable/icon_magnify"
+            android:gravity="center"
+            android:padding="@dimen/activity_padding"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/frag_online_destination_route_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/theme_color"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/icon_destination" />
+
+        <com.tms.driver.customviews.CustomTextView
+            android:id="@+id/frag_online_short_route_destination"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:drawableRight="@drawable/icon_magnify"
+            android:gravity="center"
+            android:padding="@dimen/activity_padding"
+            android:text=""
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".40"
+        android:background="@drawable/background_rider_details"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/activity_padding"
+        android:weightSum="3" >
+
+        <com.tms.driver.customviews.CustomImageView
+            android:id="@+id/frag_online_summary_image"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight=".6"
+            android:scaleType="center" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.8"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/activity_padding"
+            android:weightSum="3" >
+
+            <com.tms.driver.customviews.CustomTextView
+                android:id="@+id/frag_online_summary_rider_name"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="@dimen/activity_padding"
+                android:textColor="@color/text_color" />
+
+            <com.tms.driver.customviews.CustomTextView
+                android:id="@+id/frag_online_summary_phn_number"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/mobile_icon"
+                android:drawablePadding="@dimen/activity_padding"
+                android:gravity="left|center_vertical"
+                android:padding="10dp"
+                android:textColor="@color/text_color" />
+
+            <com.tms.driver.customviews.CustomTextView
+                android:id="@+id/frag_online_summary_car_model"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/icon_eta"
+                android:drawablePadding="@dimen/activity_padding"
+                android:gravity="left|center_vertical"
+                android:padding="@dimen/activity_padding"
+                android:textColor="@color/text_color" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".6"
+            android:gravity="right"
+            android:orientation="vertical"
+            android:weightSum="2" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.2"
+                android:background="@color/text_field"
+                android:padding="@dimen/activity_padding"
+                android:scaleType="center"
+                android:src="@drawable/star_transparent"
+               />
+
+            <com.tms.driver.customviews.CustomTextView
+                android:id="@+id/frag_online_summary_rating_textview"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".8"
+                android:background="@color/theme_brown_color"
+                android:gravity="center"
+                android:padding="@dimen/activity_padding"
+                android:textColor="@color/text_color" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".2" >
+
+        <com.tms.driver.customviews.CustomButton
+            android:id="@+id/frag_online_start_trip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/yellow"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:id="@+id/vehicle_details_linear"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="2" >
+
+            <ImageView
+                android:id="@+id/online_vehicle_image"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="@dimen/activity_padding"
+                android:scaleType="center"
+                android:src="@drawable/car_1" />
+
+            <com.tms.driver.customviews.CustomTextView
+                android:id="@+id/online_vehicle_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.4"
+                android:gravity="center_vertical"
+                android:padding="@dimen/activity_padding" />
+
+            <com.tms.driver.customviews.CustomTextView
+                android:id="@+id/online_vehicle_number"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".6"
+                android:gravity="center"
+                android:padding="@dimen/activity_padding" />
+        </LinearLayout>
+    </FrameLayout>
+
+    
+ 
+</com.tms.driver.customviews.CustomLinearLayout>
